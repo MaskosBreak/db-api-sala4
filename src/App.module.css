@@ -1,0 +1,45 @@
+.logo{
+    width: 500px;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 24px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.pagination button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    background: #5a67d8;
+}
+
+.pagination button:disabled {
+    background: #cbd5e1;
+    cursor: default;
+}
+
+.pagination span {
+    font-weight: 600;
+    color: #333;
+}
